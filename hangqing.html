@@ -1,0 +1,267 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+				border: 0;
+				font-weight: normal;
+			}
+			
+			body {
+				background: #000;
+			}
+			
+			.mui-bar {
+				
+				background: #1F2025;
+			}
+			.mui-bar-nav{
+				color: #fff;
+			}
+			
+			.mui-title {
+				width: 100%;
+				color: #fff;
+			}
+			
+			.mui-content {
+				background: #000;
+			}
+			
+			.sankuai {
+				width: 100%;
+				height: 100px;
+				background: #1F2025;
+				margin-top: 15px;
+			}
+			
+			.hong {
+				width: 115px;
+				height: 80px;
+				float: left;
+				border-radius: 10px;
+				background: red;
+				margin: 10px 10px 0 8px;
+				color: #fff;
+			}
+			
+			.hong h5 {
+				text-align: center;
+				color: #fff;
+			}
+			
+			.hong p {
+				text-align: center;
+				color: #fff;
+				line-height: 16px;
+			}
+			
+			.syi {
+				float: left;
+				margin-left: 7px;
+				font-size: 12px;
+			}
+			
+			.ser {
+				float: right;
+				margin-right: 7px;
+				font-size: 12px;
+			}
+			li{
+				background: #1F2025;
+			}
+			.niujiao{
+				height: 60px;
+				margin-top: 6px;
+			}
+			.niu{
+				font-size: 14px;
+				color: #fff;
+			}
+			.lie{
+				height: 75px;
+			}
+			.zi{
+				width: 130px;
+				color: #fff;
+				float: left;
+				font-size: 14px;
+				margin-right: 60px;
+			}
+			.liu{
+				display: block;
+				color: #fff;
+				float: left;
+				margin-right: 50px;
+				font-size: 14px;
+				margin-top: 10px;
+			}
+			.hongzi{
+				display: block;
+				float: right;
+				color: red;
+				text-align: right;
+				font-size: 14px;
+				margin-top: 10px;
+			}
+			
+			nav a {
+				background: #1F2025;
+				color: #fff;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<h1 class="mui-title">行情</h1>
+			<a class="mui-icon mui-icon-search"></a>
+		</header>
+
+		<div class="mui-content">
+			<div class="sankuai">
+				<div class="hong">
+					<h5>道琼斯</h5>
+					<p>26607.41</p>
+					<span class="syi">+214.62</span><span class="ser">+0.81%</span>
+				</div>
+				<div class="hong">
+					<h5>纳斯达克</h5>
+					<p>7501.71</p>
+					<span class="syi">+90.55</span><span class="ser">+1.22%</span>
+				</div>
+				<div class="hong">
+					<h5>标普500</h5>
+					<p>2872.18</p>
+					<span class="syi">+32.93</span><span class="ser">+1.16%</span>
+				</div>
+			</div>
+			<ul>
+				<li class="mui-table-view-cell mui-media niujiao">
+					<a href="javascript:;">
+						<div class="mui-media-body niu">纽交所</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media lie">
+					<a href="javascript:;">
+						<div class="mui-media-body zi">
+							RAIT Financial Trust
+							<p class="mui-ellipsis">RAS</p>
+						</div>
+						<span class="liu">0.61</span>
+						<span class="hongzi">+19.61%</span>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media lie">
+					<a href="javascript:;">
+						<div class="mui-media-body zi">
+							艾伯维公司
+							<p class="mui-ellipsis">ABBV</p>
+						</div>
+						<span class="liu">122.97</span>
+						<span class="hongzi">+13.55%</span>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media lie">
+					<a href="javascript:;">
+						<div class="mui-media-body zi">
+							Can-Fite BioPharma...
+							<p class="mui-ellipsis">CANF</p>
+						</div>
+						<span class="liu">2.51</span>
+						<span class="hongzi">+11.56%</span>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media lie">
+					<a href="javascript:;">
+						<div class="mui-media-body zi">
+							布鲁林克斯
+							<p class="mui-ellipsis">BXC</p>
+						</div>
+						<span class="liu">15.49</span>
+						<span class="hongzi">+11.36%</span>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media lie">
+					<a href="javascript:;">
+						<div class="mui-media-body zi">
+							推特公司
+							<p class="mui-ellipsis">TWTR</p>
+						</div>
+						<span class="liu">24.30</span>
+						<span class="hongzi">+9.66%</span>
+					</a>
+				</li>
+				
+				<li class="mui-table-view-cell mui-media niujiao">
+					<a href="javascript:;">
+						<div class="mui-media-body niu">美交所</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media lie">
+					<a href="javascript:;">
+						<div class="mui-media-body zi">
+							RAIT Financial Trust
+							<p class="mui-ellipsis">RAS</p>
+						</div>
+						<span class="liu">0.61</span>
+						<span class="hongzi">+19.61%</span>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media lie">
+					<a href="javascript:;">
+						<div class="mui-media-body zi">
+							艾伯维公司
+							<p class="mui-ellipsis">ABBV</p>
+						</div>
+						<span class="liu">122.97</span>
+						<span class="hongzi">+13.55%</span>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media lie">
+					<a href="javascript:;">
+						<div class="mui-media-body zi">
+							Can-Fite BioPharma...
+							<p class="mui-ellipsis">CANF</p>
+						</div>
+						<span class="liu">2.51</span>
+						<span class="hongzi">+11.56%</span>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media lie">
+					<a href="javascript:;">
+						<div class="mui-media-body zi">
+							布鲁林克斯
+							<p class="mui-ellipsis">BXC</p>
+						</div>
+						<span class="liu">15.49</span>
+						<span class="hongzi">+11.36%</span>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media lie">
+					<a href="javascript:;">
+						<div class="mui-media-body zi">
+							推特公司
+							<p class="mui-ellipsis">TWTR</p>
+						</div>
+						<span class="liu">24.30</span>
+						<span class="hongzi">+9.66%</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</body>
+
+</html>

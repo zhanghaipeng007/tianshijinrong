@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <style type="text/css">
+    	*{
+    		margin: 0;
+    		padding: 0;
+    		border: 0;
+    	}
+    	body{
+    		background: #000;
+    	}
+    	header a{
+    		background: #1F2025;
+    		color: #fff;
+    	}
+    	header h1{
+    		background: #1F2025;
+    	}
+    	.mui-title{
+    		color: #fff;
+    	}
+    	.mui-content{
+    		background: #000;
+    	}
+    	.jiahao{
+    		width: 80px;
+    		height: 80px;
+    		border: 1px solid #fff;
+    		border-radius: 50%;
+    		font-size: 48px;
+    		margin: 0 auto; 
+    		margin-top: 220px;                              
+    	}
+    	.jiahao a{
+    		display: block;
+    		text-align: center;
+    		line-height: 80px;
+			color: #fff;    		
+    	}
+    	.dianji{
+    		color: #fff;
+    		text-align: center;
+    		margin-top: 20px; 
+    	}
+    	.mui-icon{
+    		font-size: 36px;
+    	}
+    	nav a{
+    		background: #1F2025;
+    		color: #fff;  
+    	} 
+    </style>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+	    <h1 class="mui-title">自选股</h1> 
+	    <a class="mui-icon mui-icon-search"></a>
+	    <a class="mui-icon mui-icon-reload mui-pull-right"></a>
+	</header>
+	
+	<div class="mui-content">
+	    <div class="jiahao">
+			<a class="mui-icon mui-icon-plusempty"></a>
+		</div>
+		<p class="dianji">暂无自选，点击添加</p>
+	</div>
+	
+</body>
+<script type="text/javascript" charset="utf-8">
+mui.init();
+mui.plusReady(function() {
+	var webview = plus.webview.currentWebview();
+	var arrView = [
+		
+		"zixuan.html",
+		"hangqing.html",
+		"peixun.html", 
+		"wode.html"
+	]
+	var styles = {
+		top: "0px",
+		bottom: "50px"
+	};
+
+	for(var i = 0; i < arrView.length; i++) {
+
+		var item = plus.webview.create(arrView[i], arrView[i], styles);
+		//创建子视口
+		item.hide();
+		//隐藏子视口
+		webview.append(item);
+	}
+
+	plus.webview.show(arrView[0])
+
+	mui('.mui-bar').on('tap', 'a', function() {
+
+		var hrefUrl = this.getAttribute('href');
+
+		plus.webview.show(hrefUrl);
+
+	})
+})
+</script>
+</html>
